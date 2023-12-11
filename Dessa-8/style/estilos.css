@@ -10,7 +10,16 @@
         margin-left: 3%;
         width: auto;
     }
+    input, textarea, select {
+    margin: 0 auto;
+    width: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    } 
+    
 }
+
 
 html {
     background-color: #1F2023;
