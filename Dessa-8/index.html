@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afiliación</title>
+    <link rel="stylesheet" href="./style/estilos.css">
+</head>
+<body>
+    <form onsubmit="alert('Inició la afiliación!')">
+        <div class="co-chge">
+            <button type="button" onclick="onClick()" class="b-change">
+                Cambiar estilo de CSS
+            </button>
+        </div>
+        <div class="cont-h1">
+            <h1>Vení al Gym! 💪🏼</h1>
+        </div>
+        <fieldset>
+            <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+            <div>
+                <label for="userName">Nombre:<sup>*</sup></label>
+                <input id="userName" name="userName" type="text" required autofocus>
+            </div>
+            <div>
+                <label for="userLastName">Apellido:<sup>*</sup></label>
+                <input id="userLastName" name="userLastName" type="text" required>
+            </div>
+            <div>
+                <label for="dni">Documento:<sup>*</sup></label>
+                <input id="dni" name="dni" type="text" required>
+            </div>
+            <div>
+                <label for="country">Nacionalidad:<sup>*</sup></label>
+                <select id="country" name="country" required>
+                    <option selected>- Seleccionar -</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="BRA">Brasileña</option>
+                    <option value="URU">Uruguaya</option>
+                    <option value="OT">Otra</option>
+                </select>
+            </div>
+            <div>
+                <label class="t-area" for="msg">Contanos un poco de vos...</label>
+                <textarea name="msg" id="msg" cols="18" rows="2"></textarea>
+            </div>
+            <div >
+                <label class="w-gene" for="gene">Sexo:<sup>*</sup></label>
+                <div id="gene" name="gene" class="f-direction-row align-center" required>
+                    <input type="radio" id="f" name="gender" value="f" class="m-padding" checked>
+                    <label class="w-label" for="f">Femenino</label>
+                    
+                    <input type="radio" id="m" name="gender" value="m" class="m-padding">
+                    <label class="w-label"  for="m">Masculino</label>
+                    
+                    <input type="radio" id="o" name="gender" value="o" class="m-padding">
+                    <label class="w-label"  for="o">Otro</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="points">
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+        </div>
+        <fieldset>
+            <legend>📱 Datos de Contacto 📧</legend>
+            <div>
+                <label for="phone">Teléfono:</label>
+                <input id="phone" name="phone" type="tel" placeholder="Código de área y número">
+            </div>
+            <div>
+                <label for="email">Dirección de correo electrónico:<sup>*</sup></label>
+                <input id="email" name="email" type="email" placeholder="Ej: mail@gmail.com" required>
+            </div>
+        </fieldset>
+        <div class="points">
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+            <div class="colour-points"></div>
+        </div>
+        <fieldset class="ali-lft">
+            <legend>🚴‍♂️ Actividades 🤸‍♂️</legend>
+            <div>
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+                <p>Sede Palermo:</p>
+                <div class="f-direction-row align-center ">
+                    <input type="checkbox" id="cbox1" value="ba" class="m-padding" />
+                    <label class="w-label" for="cbox1">Básquet</label>
+                    
+                    <input type="checkbox" id="cbox1" value="bo" class="m-padding" />
+                    <label class="w-label" for="cbox1">Boxeo</label>
+                    
+                    <input type="checkbox" id="cbox1" value="fu" class="m-padding" />
+                    <label class="w-label" for="cbox1">Fútbol</label>
+                    
+                    <input type="checkbox" id="cbox1" value="te" class="m-padding" />
+                    <label class="w-label" for="cbox1">Tenis</label>
+                </div>
+                <p>Sede Rosario:</p>
+                <div class="f-direc-row ali-center"> 
+                    <input type="checkbox" id="cbox1" value="bas" class="m-padding" />
+                    <label class="w-label" for="cbox2">Básquet</label>
+    
+                    <input type="checkbox" id="cbox1" value="fut" class="m-padding" />
+                    <label class="w-label" for="cbox2">Fútbol</label>
+                    
+                    <input type="checkbox" id="cbox1" value="rug" class="m-padding" />
+                    <label class="w-label" for="cbox2">Rugby</label>
+                    
+                    <input type="checkbox" id="cbox1" value="vol" class="m-padding" />
+                    <label class="w-label" for="cbox2">Voley</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="cont-term">
+            <div class="term-condic">
+                <div class="ali-cen">
+                    <input type="checkbox" id="cbox3" value="acepto" class="m-padding2" required/>
+                    <label class="w-term" for="cbox3" class="ch-color">Acepto las condiciones*</label>
+                </div>
+                <div class="ali-cen">
+                    <input type="checkbox" id="cbox3" value="novedades" class="m-padding2" checked/>
+                    <label class="w-term" for="cbox3" class="ch-color">Deseo recibir novedades</label>
+                </div>
+                <p class="bo">*: campo obligatorio.</p>
+            </div>
+            <div class="insertt-vid">
+                <video width="480px" controls src="./video/gym-training.mp4" onloadstart="this.muted=true" autoplay loop></video>
+            </div>
+        </div>
+        <div class="botones align-center f-direction-row justify-center">
+            <input type="submit" value="Iniciar afiliación">
+            <input type="reset" value="Restablecer">
+        </div>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+/*https://coolors.co/ffb3a4-c320ff-353462-a24463-796bf2*/
+
+  
+html {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 15% 2rem 15%;
+}
+body {
+    background: #C320FF;
+    font-family: 'Nosifer', sans-serif;
+}
+.cont-h1 {
+    background-image: url("../img/g-m-pesas.jpg");
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;;
+    background-size: cover;
+    box-shadow: 0.25rem 0.25rem 1.5rem inset silver;
+    border: 0.5rem solid #796BF2;
+    
+}
+h1 {
+    align-items: center;
+    color: #796BF2;
+    font-size: 1.75rem;
+    margin: 1.5rem 3rem;
+    text-align: left;
+}  
+p {
+    color: #796BF2;
+    margin: 2rem 0 1rem 0;
+    font-size: 0.8rem;
+}
+fieldset {
+    align-items: left;
+    background-color: #F0E7E8;
+    border: 0.5rem dotted #796BF2;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content: center;
+    margin: 3rem 0;
+    padding: 2rem 1.5rem;    
+}
+legend {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #796BF2;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #F0E7E8;
+    padding: 0.6rem;
+    width: 63%;
+} 
+input, select, textarea {
+    box-shadow: 0.23rem 0.23rem 0.4rem silver; 
+}
+label {
+    color: #796BF2;
+    margin: 0.9rem 0;
+}
+label, input, select, textarea {
+    display: inline-block;
+    text-align: left;
+    width: 94%;
+}
+select {
+    width: 90%;
+}
+input, textarea, select {
+    background-color: #796BF2;
+    border: 2px dashed #796BF2;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    resize: none;
+    color: #353462;
+    font-family: 'Press Start 2P';
+    text-align: left;
+}
+input:focus, textarea:focus, select:focus {
+    background-color:#A24463;
+    color: #353462;
+}
+input::placeholder {
+    color:#F0E7E8;
+}
+input[type="radio"],[type="checkbox"] {
+    width: auto;
+}
+select {
+    color:#F0E7E8;
+}
+textarea {
+    height: 12rem;
+}
+.f-direction-row {
+    display: flex;
+    flex-direction: row;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.m-padding {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+.m-padding2 {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    color:#F0E7E8;
+}
+.align-left {
+    display: flex;
+    align-items: left;
+}
+.term-cond {
+    color:#F0E7E8;
+    font-size: 0.925rem;
+    margin-left: 0.75rem;
+}
+.ch-color {
+    color:#F0E7E8;
+}
+.bold {
+    font-weight: bold;
+    color:#F0E7E8;
+    margin-left: 0.9rem;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+input[type="submit"]:focus,[type="reset"]:focus {
+    background-color:#A24463;
+    color: #353462;
+}
+input[type="submit"],[type="reset"] {
+    align-items: center;
+    background-color:#2D65FE;
+    border: 2px solid #A24463;
+    border-radius: 5rem;
+    box-shadow: none; 
+    color: #353462;
+    font-weight: bold;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+.cont-change {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: right;
+    width: auto;
+    margin: 1.5rem 0;
+}
+.b-change {
+    background-color: #2D65FE;
+    border: 1px solid #F0E7E8;
+    border-radius: 4rem;
+    font-family:'Nosifer', sans-serif;
+    color: #2D65FE;
+   
+    
+    
+}
+.b-change:focus {
+    background-color: #353462;
+    color: #F0E7E8;
+}
+.botones {
+    margin-bottom: 2rem;
+}
+.insert-video {
+    display:none !important;
+}
+.w-term {
+    color:#F0E7E8;
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        margin-right: 2%;
+        margin-left: 2%;
+        width: auto;
+    }
+    .cont-change {
+        justify-content: center;
+    }
+    .b-change {
+        line-height: 1.5;
+    }
+    .term-cond {
+        margin-right: 2%;
+        margin-left: 2%;
+        width: auto;
+    }
+
+    .cont-change {
+        justify-content: center;
+    }
+    .b-change {
+        line-height: 1.9;
+    }
+
+    .f-direction-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        margin: 4rem 0 2rem 0;
+    }
+    label, p {
+        text-align: center;
+    }
+    
+}
+
